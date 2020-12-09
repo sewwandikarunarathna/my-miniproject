@@ -23,7 +23,8 @@ class CreateUsersTable extends Migration
             $table->string('phone_no');
             $table->date('birthday');
             $table->string('gender');
-            $table->string('password');
+            $table->string('blood_type')->nullable();
+            $table->string('medical_details')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });

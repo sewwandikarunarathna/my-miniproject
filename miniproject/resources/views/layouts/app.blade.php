@@ -11,6 +11,8 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" integrity="sha512-TawcSfIUO8yB0Or8FXEDW2X32Q71ZGAOYVVwe7n3EsoyQb+iMZbodI6RnQ4JDcItNoO3TmwP7/bD89vhQA4zTA==" crossorigin="anonymous"></script>
+    <script src="{{asset('js/custom.js')}}"></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -91,7 +93,7 @@
    
         <nav class="navbar navbar-expand-md navbar-custom">
             
-                <a class="navbar-brand h2 font-weight-bold" href="{{ url('/') }}">
+                <a class="navbar-brand h1 font-weight-bold" href="{{ url('/') }}">
                     Outpatient
                 </a>
                 <button class="navbar-toggler nav-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
@@ -159,8 +161,10 @@
             @yield('content')
         </main>
    
-    <div>
+    <script>
         @yield('scripts')
-    </div>
+        
+    </script>
+    
 </body>
 </html>

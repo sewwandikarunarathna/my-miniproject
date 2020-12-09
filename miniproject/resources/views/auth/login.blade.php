@@ -45,7 +45,7 @@
         text-decoration: none;
     }
     .area{
-        background-image:linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('https://media.istockphoto.com/photos/healthcare-concept-medical-background-picture-id1001713236?k=6&m=1001713236&s=612x612&w=0&h=kEa72hNoWGfJxR7MreSDkuPRzPPOzBAY3forhcKbCkE=');
+        background-image:linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('https://gim.uw.edu/sites/gim.uw.edu/files/news_tiles/stock%20photo%20-%20doctor%20hands%20computer.jpg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;

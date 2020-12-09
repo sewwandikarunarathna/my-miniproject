@@ -9,6 +9,7 @@
             width: 100%;
             color: #effcef;
             padding-top: 40px ;
+            margin: 0px;
         }
         .footer a{
             font-size: 20px;
