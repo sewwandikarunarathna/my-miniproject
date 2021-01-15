@@ -20,7 +20,7 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/makeAppt', function () {
-    return view('makeAppt');
+    return view('patient.makeAppt');
 });
 
 Route::get('/channelDet', function () {
@@ -61,4 +61,60 @@ Route::get('/doctorList', function () {
 
 Route::get('/viewSessions', function () {
     return view('viewSessions');
+});
+
+Route::get('/addSession', function () {
+    return view('addSession');
+});
+
+Route::get('/addDoctor', function () {
+    return view('admin.addDoctor');
+});
+
+Route::get('/updateDoctor', function () {
+    return view('admin.updateDoctor');
+});
+
+Route::get('/patientList', function () {
+    return view('admin.patientList');
+});
+
+Route::get('/addPatient', function () {
+    return view('admin.addPatient');
+});
+
+Route::get('/apptDetails', function () {
+    return view('receptionist.apptDetails');
+});
+
+Route::get('/docDetails', function () {
+    return view('receptionist.docDetails');
+});
+
+Route::get('/dailySessions', function () {
+    return view('receptionist.dailySessions');
+});
+
+Route::get('/patientDetails', function () {
+    return view('receptionist.patientDetails');
+});
+
+Route::get('/makeApptRecep', function () {
+    return view('receptionist.makeApptRecep');
+});
+
+Route::get('/mySessions', function () {
+    return view('doctor.mySessions');
+});
+
+Route::get('/appointments', function () {
+    return view('doctor.appointments');
+});
+
+Route::get('/patientProfl', function () {
+    return view('doctor.patientProfl');
+});
+
+Route::get('/updatePatientProfile', function () {
+    return view('doctor.updatePatientProfile');
 });

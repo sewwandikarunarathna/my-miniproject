@@ -1,7 +1,7 @@
 @extends('layouts.app')
 <?php
     
-    $title = 'My Appointments';
+    $title = 'make appointment';
    $page = "";
  ?>
 
@@ -51,10 +51,11 @@
     transition: all 0.3s;
   }
 
-  .area h3{
+  .area h3{ 
     text-align: center;
     padding: 15px 0px;
   }
+
   @media (max-width: 768px) {
     .sidebar{
       margin-left: -250px;
@@ -75,16 +76,22 @@
   <nav class="sidebar">
     <ul class="lisst-unstyled components">
       <li class="">
-        <a href="/makeAppt">Make Appointment</a>
+        <a href="/apptDetails">Appointment Details</a>
       </li>
       <li>
-        <a href="/channelDet">Channeling Details</a>
+        <a href="/docDetails">Doctor Details</a>
       </li>
       <li>
-        <a href="/myAppt" class="active">My Appointments</a>
+        <a href="/dailySessions">Daily Sessions</a>
       </li>
       <li>
-        <a href="/myProfile">My Profile</a>
+        <a href="/patientDetails">Patient Details</a>
+      </li>
+      <li>
+        <a href="/makeApptRecep" class="active">Make Appointment</a>
+      </li>
+      <li>
+        <a href="/changePassword">Change Password</a>
       </li>
     </ul>
 
@@ -101,38 +108,7 @@
     </nav>
     <br>
     
-    <h3>My Appointments</h3>
-    <div class="row justify-content-center">
-      <div class="col-md-10 table-responsive">
-        <table class="table table-striped">
-          <th>Date</th>
-          <th>Time</th>
-          <th>Doctor</th>
-          <th>Status</th>
-          
-        
-          <tr>
-              <td>today</td>
-              <td>4.00</td>
-              <td>david</td>
-              <td>canceled</td>
-          </tr>  
-          <tr>
-            <td>today</td>
-            <td>4.00</td>
-            <td>david</td>
-            <td>confirmed</td>
-        </tr>
-        <tr>
-          <td>today</td>
-          <td>4.00</td>
-          <td>david</td>
-          <td>completed</td>
-      </tr>
-
-        </table>
-      </div>
-    </div>
+    @include('layouts.makeApptContent')
   </div>
    
  

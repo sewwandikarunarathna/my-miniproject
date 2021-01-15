@@ -1,7 +1,7 @@
 @extends('layouts.app')
 <?php
     
-    $title = 'update employee';
+    $title = 'update doctor';
     $page = '';
  ?>
 
@@ -102,13 +102,13 @@
     <nav class="sidebar">
       <ul class="lisst-unstyled components">
         <li class="">
-          <a href="/empRegister" class="active">Employee Registration</a>
+          <a href="/empRegister">Employee Registration</a>
         </li>
         <li>
           <a href="/userList">Users</a>
         </li>
         <li>
-          <a href="/doctorList">Doctors</a>
+          <a href="/doctorList" class="active">Doctors</a>
         </li>
         <li>
           <a href="/patientList">Patients</a>
@@ -131,7 +131,7 @@
         </nav>
         <br>
         
-        <h4><a href="/empRegister" class="btn btn-warning back">Back to Employees</a></h4>
+        <h4><a href="/doctorList" class="btn btn-warning back">Back to Doctors</a></h4>
 
         <div class="row justify-content-center">
             <div class="col-md-7">
@@ -139,74 +139,74 @@
                
                         <form method="POST" action="">
                             @csrf
-                            <h3>Update Employee Details!</h3>
+                            <h3>Update Doctor Details!</h3>
                             <hr>
                             <div class="form-group row">
-                                <label for="emp_firstname" class="col-md-4 col-form-label text-md-right">{{ __('First Name') }}</label>
+                                <label for="doc_firstname" class="col-md-4 col-form-label text-md-right">{{ __('First Name') }}</label>
 
                                 <div class="col-md-6">
-                                    <input id="emp_firstname" type="text" class="form-control" name="emp_firstname" value="{{ old('emp_firstname') }}">
-
-                                   
-                                </div>
-                            </div>
-
-                            <div class="form-group row">
-                                <label for="emp_lastname" class="col-md-4 col-form-label text-md-right">{{ __('Last Name') }}</label>
-
-                                <div class="col-md-6">
-                                    <input id="emp_lastname" type="text" class="form-control" name="emp_lastname" value="{{ old('emp_lastname') }}">
+                                    <input id="doc_firstname" type="text" class="form-control" name="doc_firstname" value="{{ old('doc_firstname') }}">
 
                                     
                                 </div>
                             </div>
 
                             <div class="form-group row">
-                                <label for="emp_email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
+                                <label for="doc_lastname" class="col-md-4 col-form-label text-md-right">{{ __('Last Name') }}</label>
 
                                 <div class="col-md-6">
-                                    <input id="emp_email" type="email" class="form-control" name="emp_email" value="{{ old('emp_email') }}">
+                                    <input id="doc_lastname" type="text" class="form-control" name="doc_lastname" value="{{ old('doc_lastname') }}">
 
-                                    
+                                
                                 </div>
                             </div>
 
                             <div class="form-group row">
-                                <label for="emp_nic" class="col-md-4 col-form-label text-md-right">{{ __('NIC Number') }}</label>
-
-                                <div class="col-md-6">
-                                    <input id="emp_nic" type="text" class="form-control" name="emp_nic" value="{{ old('emp_nic') }}">
-
-                                    
-                                </div>
-                            </div>
-
-                            <div class="form-group row">
-                                <label for="emp_phone_no" class="col-md-4 col-form-label text-md-right">{{ __('Phone Number') }}</label>
-
-                                <div class="col-md-6">
-                                    <input id="emp_phone_no" type="text" class="form-control" name="emp_phone_no" value="{{ old('emp_phone_no') }}">
-
-                                   
-                                </div>
-                            </div>
-
-                            <div class="form-group row">
-                                <label for="job_title" class="col-md-4 col-form-label text-md-right">{{ __('Job Title') }}</label>
+                                <label for="job_title" class="col-md-4 col-form-label text-md-right">{{ __('Speciality') }}</label>
     
                                 <div class="col-md-6">
-                                    <select id="job_title" class="form-control" name="job_title" value="{{ old('job_title') }}">
-                                        <option value="-1" selected>Select one</option>
-                                        <option value="admin">Admin</option>
-                                        <option value="receptionist">Receptionist</option>
+                                    <select id="speciality" class="form-control" name="speciality" value="{{ old('speciality') }}">
+                                        <option value="-1">Select one</option>
+                                        <option value="dentist">Dentist</option>
+                                        <option value="heart">Heart Surgon</option>
                                     </select>
     
-                                 
+                                    
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label for="work_hosptl" class="col-md-4 col-form-label text-md-right">{{ __('Working Hospital') }}</label>
+
+                                <div class="col-md-6">
+                                    <input id="work_hosptl" type="text" class="form-control" name="work_hosptl" value="{{ old('work_hosptl') }}">
+
+                                    
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label for="doc_email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
+
+                                <div class="col-md-6">
+                                    <input id="doc_email" type="email" class="form-control" name="doc_email" value="{{ old('doc_email') }}">
+
+                                    
                                 </div>
                             </div>
 
                             
 
+                            <div class="form-group row">
+                                <label for="doc_phone_no" class="col-md-4 col-form-label text-md-right">{{ __('Phone Number') }}</label>
+
+                                <div class="col-md-6">
+                                    <input id="doc_phone_no" type="text" class="form-control" name="doc_phone_no" value="{{ old('doc_phone_no') }}">
+
+                                    
+                                </div>
+                            </div>
+                            
                             <div class="form-group row mb-0">
                                 <div class="col-md-6 offset-md-4">
                                     <button type="submit" class="btn btn-primary button">

@@ -1,7 +1,7 @@
 @extends('layouts.app')
 <?php
     
-    $title = 'Employee Registration';
+    $title = 'doctor list';
    $page = "";
  ?>
 
@@ -120,30 +120,30 @@
           </tr> 
           
           <tr>
-              <td>nime shakya</td>
+              <td>nsdfwjefh fwu</td>
               <td>dentist</td>
               <td>Kandy</td>
               <td>qwertgh5738@gmail.com</td>
               <td>465733896</td>
-              <td><a href="/viewSessions" class="btn btn-info">View Sessions</a>&nbsp;&nbsp;<a href=""  class="btn btn-success">Update</a></td>
+              <td><a href="/viewSessions" class="btn btn-info">View Sessions</a>&nbsp;&nbsp;<a href="/updateDoctor"  class="btn btn-success">Update</a></td>
               
           </tr>  
           <tr>
-                <td>nime shakya</td>
+                <td>sdfhjww ri</td>
                 <td>dentist</td>
                 <td>Kandy</td>
                 <td>qwertgh5738@gmail.com</td>
                 <td>465733896</td>
-                <td><a href="/viewSessions" class="btn btn-info">View Sessions</a>&nbsp;&nbsp;<a href=""  class="btn btn-success">Update</a></td>
+                <td><a href="/viewSessions" class="btn btn-info">View Sessions</a>&nbsp;&nbsp;<a href="/updateDoctor"  class="btn btn-success">Update</a></td>
         </tr>
         <tr>
-            <td>nime shakya</td>
+            <td>sjkukerv rsefv</td>
               <td>dentist</td>
               <td>Kandy</td>
               <td>qwertgh5738@gmail.com</td>
               <td>465733896</td>
-              <td><a href="/viewSessions" class="btn btn-info">View Sessions</a>&nbsp;&nbsp;<a href=""  class="btn btn-success">Update</a></td>
-      </tr>
+              <td><a href="/viewSessions" class="btn btn-info">View Sessions</a>&nbsp;&nbsp;<a href="/updateDoctor"  class="btn btn-success">Update</a></td>
+        </tr>
 
         </table>
       </div>

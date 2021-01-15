@@ -1,7 +1,7 @@
 @extends('layouts.app')
 <?php
     
-    $title = 'Employee Registration';
+    $title = 'view sessions';
    $page = "";
  ?>
 

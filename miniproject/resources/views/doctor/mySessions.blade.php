@@ -1,7 +1,7 @@
 @extends('layouts.app')
 <?php
     
-    $title = 'My Appointments';
+    $title = 'my sessions';
    $page = "";
  ?>
 
@@ -42,19 +42,20 @@
     background: #ccedd2;
     text-decoration: none;
   }
-  
-  
+
   .area{
+     
     width: 100%;
     padding: 20px;
     min-height: 100vh;
     transition: all 0.3s;
   }
 
-  .area h3{
-    text-align: center;
-    padding: 15px 0px;
+  table{
+    background-color:rgba(32,32,32,0.3);
   }
+
+
   @media (max-width: 768px) {
     .sidebar{
       margin-left: -250px;
@@ -70,22 +71,21 @@
  
 </style>
 @section('content')
-
-<div class="wrapper"> 
+<div class="wrapper">
   <nav class="sidebar">
     <ul class="lisst-unstyled components">
       <li class="">
-        <a href="/makeAppt">Make Appointment</a>
+        <a href="/mySessions" class="active">My Sessions</a>
       </li>
       <li>
-        <a href="/channelDet">Channeling Details</a>
+        <a href="/appointments">Appointments</a>
       </li>
       <li>
-        <a href="/myAppt" class="active">My Appointments</a>
+        <a href="/makeApptDoc">Make Appointment</a>
       </li>
       <li>
-        <a href="/myProfile">My Profile</a>
-      </li>
+        <a href="/docProfile">My Profile</a>
+      </li> 
     </ul>
 
   </nav>
@@ -101,33 +101,33 @@
     </nav>
     <br>
     
-    <h3>My Appointments</h3>
     <div class="row justify-content-center">
-      <div class="col-md-10 table-responsive">
+      <div class="col-md-8 table-responsive">
         <table class="table table-striped">
-          <th>Date</th>
-          <th>Time</th>
-          <th>Doctor</th>
-          <th>Status</th>
-          
-        
           <tr>
-              <td>today</td>
-              <td>4.00</td>
-              <td>david</td>
-              <td>canceled</td>
+              <th>Date</th>
+              <th>Session</th>
+              <th>Patient Limit</th>
+              <th>Action</th> 
+          </tr> 
+          
+          <tr>
+              <td>23/12/2020</td>
+              <td>6-7</td>
+              <td>6</td>
+              <td><a href="" class="btn btn-danger">Cancel</a></td>   
           </tr>  
           <tr>
-            <td>today</td>
-            <td>4.00</td>
-            <td>david</td>
-            <td>confirmed</td>
+            <td>23/12/2020</td>
+            <td>6-7</td>
+            <td>6</td>
+            <td><a href="" class="btn btn-danger">Cancel</a></td>  
         </tr>
         <tr>
-          <td>today</td>
-          <td>4.00</td>
-          <td>david</td>
-          <td>completed</td>
+            <td>23/12/2020</td>
+              <td>6-7</td>
+              <td>6</td>
+              <td><a href="" class="btn btn-danger">Cancel</a></td>  
       </tr>
 
         </table>
